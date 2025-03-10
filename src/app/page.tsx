@@ -1,41 +1,47 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="max-w-4xl mx-auto p-8 bg-white shadow-lg rounded-lg grid grid-cols-3 gap-6">
-      <aside className="col-span-1 bg-gray-100 p-6 rounded-lg">
-        <header className="text-center mb-6">
+    <div className="max-w-5xl mx-auto p-12 bg-white">
+      <header className="flex flex-row items-start mb-6">
+        <div className="md:w-1/4 text-center md:text-left">
           <img
             src="/avatar.jpg"
             alt="Profile"
-            className="w-32 h-32 mx-auto rounded-full border-4 border-blue-500 mb-4 object-cover"
+            className="w-48 h-full mx-auto mb-4 object-cover"
           />
-          <h1 className="text-3xl font-extrabold text-blue-600">
+        </div>
+        <div className="md:w-2/3 mt-6 md:mt-0 md:ml-4">
+          <h1 className="text-4xl font-extrabold text-blue-600">
             Đỗ Văn Thành
           </h1>
-          <p className="text-lg text-gray-700 font-medium">
+          <p className="text-2xl text-gray-700 font-medium">
             Frontend Developer
           </p>
-        </header>
-        <section className="mb-6">
-          <h2 className="text-xl font-semibold border-b-2 pb-2 mb-4 text-gray-800">
-            Contact Information
-          </h2>
-          <p className="text-gray-700">
-            <strong>Email:</strong> thanh.do.gn@gmail.com
-          </p>
-          <p className="text-gray-700">
+
+          <p className="text-gray-700 mt-2 flex items-center gap-1">
             <strong>Phone:</strong> 0355 291 555
           </p>
-          <p className="text-gray-700">
+          <p className="text-gray-700 flex items-center gap-1">
+            <strong>Email:</strong> thanh.do.gn@gmail.com
+          </p>
+          <p className="text-gray-700 flex items-center gap-1">
             <strong>Date of birth:</strong> 13/06/1998
           </p>
-          <p className="text-gray-700">
+          <p className="text-gray-700 flex items-center gap-1">
             <strong>Address:</strong> 2 P. Hưng Thịnh, Yên Sở, Hoàng Mai, Hà Nội
           </p>
-        </section>
-        <section>
-          <h2 className="text-xl font-semibold border-b-2 pb-2 mb-4 text-gray-800">
+
+          <p className="text-gray-700 mt-2">
+            With four years of experience in programming, I would like to apply
+            for the Front-End Developer position at your company to leverage my
+            knowledge and coding experience to enhance products and bring
+            valuable benefits to the business.
+          </p>
+        </div>
+      </header>
+
+      <main>
+        <section className="mb-6">
+          <h2 className="text-2xl font-semibold border-b-2 pb-2 mb-4 text-gray-800">
             Skills
           </h2>
           <ul className="list-disc pl-5 text-gray-700">
@@ -44,23 +50,20 @@ export default function Home() {
             </li>
             <li>
               <strong>Frontend:</strong> React, Next.js, Remix.js, Tailwind CSS,
-              Ant Design, MIUI, React Native
+              Ant Design, MUI, React Native, HTML, CSS, 
             </li>
             <li>
-              <strong>Backend:</strong> Node.js, REST API, GraphQL
+              <strong>Backend:</strong> Node.js, GraphQL, Sequelize
             </li>
-            <li>
-              <strong>Frameworks:</strong> Docker, Jest, React Testing Library
-            </li>
+            <li>Have experience with Docker, Git, Figma</li>
+            <li>Have experience with implement npm packages</li>
             <li>
               <strong>Other:</strong> Has good learning ability. Can communicate
               with customers in English.
             </li>
           </ul>
         </section>
-      </aside>
 
-      <main className="col-span-2">
         <section className="mb-6">
           <h2 className="text-2xl font-semibold border-b-2 pb-2 mb-4 text-gray-800">
             Work Experience
@@ -116,7 +119,7 @@ export default function Home() {
               </li>
               <li>
                 <strong>Data Visualization Application:</strong> Developed a
-                chart-based management system using React and MIUI.
+                chart-based management system using React and MUI.
                 Additionally, I contributed to building an NPM library for
                 reusable UI components.
               </li>
@@ -130,6 +133,7 @@ export default function Home() {
             </p>
           </div>
         </section>
+
         <section>
           <h2 className="text-2xl font-semibold border-b-2 pb-2 mb-4 text-gray-800">
             Education

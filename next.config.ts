@@ -4,7 +4,8 @@ const isProd = process.env.NODE_ENV === 'production';
 
 const nextConfig: NextConfig = {
   /* config options here */
-  assetPrefix: isProd ? "my-csv-next" : "",
+  output: 'export',
+  assetPrefix: isProd ? "/my-cv/" : "",
   images: {
     unoptimized: true,
   },
